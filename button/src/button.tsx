@@ -1,6 +1,4 @@
 import * as React from 'react';
-import type { ElementType, HTMLAttributes } from 'react';
-import { useButton } from '@react-aria/button';
 import styles from './button.module.scss';
 import { type VariantProps, cva } from 'cva';
 import { Slot } from '@radix-ui/react-slot';

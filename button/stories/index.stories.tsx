@@ -17,13 +17,21 @@ export const primary = () => (
 
 export const secondary = () => (
   <>
-    <Button secondary size="small" onPress={() => alert('Button pressed!')}>
+    <Button
+      variant="secondary"
+      size="small"
+      onPress={() => alert('Button pressed!')}
+    >
       Small
     </Button>
-    <Button secondary size="medium" onPress={() => alert('Button pressed!')}>
+    <Button variant="secondary" onPress={() => alert('Button pressed!')}>
       Medium
     </Button>
-    <Button secondary size="large" onPress={() => alert('Button pressed!')}>
+    <Button
+      variant="secondary"
+      size="large"
+      onPress={() => alert('Button pressed!')}
+    >
       Large
     </Button>
   </>

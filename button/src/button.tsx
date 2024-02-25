@@ -1,49 +1,52 @@
 import * as React from 'react';
-const { useRef } = React;
 import type { ElementType, HTMLAttributes } from 'react';
-import type { AriaButtonProps } from '@react-types/button';
 import { useButton } from '@react-aria/button';
 import styles from './button.module.scss';
+import { type VariantProps, cva } from 'cva';
+import { Slot } from '@radix-ui/react-slot';
+import { clsx } from 'clsx';
 
-export type ButtonProps = AriaButtonProps<ElementType> & {
-  /**
-  Use the size prop to change the size of the button. You can set the value to 'small', 'medium' or 'large'.
-   */
-  size?: 'small' | 'medium' | 'large';
-  /**
-  Boolean flag indicating if should render as 'primary' variation.
-   */
-  primary?: boolean;
-  /**
-  Boolean flag indicating if should render as 'secondary' variation.
-   */
-  secondary?: boolean;
-};
+export interface ButtonProps
+  extends React.ButtonHTMLAttributes<HTMLButtonElement>,
+    VariantProps<typeof buttonVariants> {
+  asChild?: boolean;
+}
 
-/**
-  The Button component is used to trigger an action or event, such as submitting a form, opening a dialog, canceling an action, or performing a delete operation.
-*/
-export const Button = ({
-  size = 'medium',
-  primary = true,
-  secondary = false,
-  ...rest
-}: ButtonProps) => {
-  const ref = useRef();
-  const { buttonProps } = useButton(rest, ref);
-  const { children } = rest;
+const buttonVariants = cva({
+  base: styles.button,
+  variants: {
+    variant: {
+      default: styles.primary,
+      outline: styles.outline,
+      secondary: styles.secondary,
+    },
+    size: {
+      default: styles.sizeDefault,
+      sm: styles.sizeSm,
+      lg: styles.sizeLg,
+      icon: styles.sizeIcon,
+    },
+    isDisabled: {
+      true: styles.disabled,
+    },
+  },
+  defaultVariants: {
+    variant: 'default',
+    size: 'default',
+  },
+});
 
-  return (
-    <button
-      {...buttonProps}
-      ref={ref}
-      className={`
-      ${styles.button} ${styles[size]}
-      ${secondary ? styles.secondary : ''}
-      ${rest.isDisabled ? styles.disabled : ''}
-      `}
-    >
-      {children}
-    </button>
-  );
-};
+export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
+  ({ className, variant, size, disabled, asChild = false, ...props }, ref) => {
+    const Comp = asChild ? Slot : 'button';
+    return (
+      <Comp
+        className={clsx(buttonVariants({ variant, size, className }))}
+        ref={ref}
+        {...props}
+      />
+    );
+  }
+);
+
+Button.displayName = 'Button';

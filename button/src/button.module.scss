@@ -21,23 +21,32 @@
   padding-inline-start: var(--aria-spacing-medium);
   padding-inline-end: var(--aria-spacing-medium);
   margin: 2px;
-  background-color: var(--aria-color-primary);
-  color: var(--aria-color-secondary);
+  background: none;
+  color: var(--fpsm-colour-foreground);
   cursor: pointer;
 }
 
 .button:hover {
-  background-color: var(--aria-color-primary);
+  background-color: var(--fpsm-colour-primary);
   opacity: 0.9;
 }
 
+.primary {
+  background: var(--fpsm-colour-primary);
+}
+
 .secondary {
-  background-color: var(--aria-color-secondary);
-  color: var(--aria-color-primary);
+  background-color: var(--fpsm-colour-secondary);
+  color: var(--fpsm-colour-foreground);
 }
 
 .secondary:hover {
   background-color: var(--aria-color-gray-300);
+}
+
+.outline {
+  border: 1px solid var(--fpsm-colour-foreground);
+  color: var(--fpsm-colour-foreground);
 }
 
 .disabled {
@@ -53,17 +62,22 @@
   background-color: var(--aria-color-primary);
 }
 
-.small {
+.sizeSm {
   font-size: var(--aria-font-size-small);
   height: var(--aria-spacing-x-large);
 }
 
-.medium {
+.sizeDefault {
   font-size: var(--aria-font-size-medium);
   height: var(--aria-spacing-xx-large);
 }
 
-.large {
+.sizeLg {
   font-size: var(--aria-font-size-large);
   height: var(--aria-spacing-xxx-large);
+}
+
+.sizeIcon {
+  height: var(--fpsm-height-10);
+  width: var(--fpsm-height-10);
 }

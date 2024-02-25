@@ -22,17 +22,17 @@
   padding-inline-end: var(--aria-spacing-medium);
   margin: 2px;
   background: none;
-  color: var(--fpsm-colour-foreground);
   cursor: pointer;
 }
 
-.button:hover {
+.primary:hover {
   background-color: var(--fpsm-colour-primary);
   opacity: 0.9;
 }
 
 .primary {
   background: var(--fpsm-colour-primary);
+  color: var(--fpsm-colour-primary-text);
 }
 
 .secondary {
@@ -41,7 +41,8 @@
 }
 
 .secondary:hover {
-  background-color: var(--aria-color-gray-300);
+  background-color: var(--fpsm-colour-secondary);
+  opacity: 0.9;
 }
 
 .outline {

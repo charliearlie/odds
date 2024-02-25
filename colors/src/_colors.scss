@@ -7,4 +7,10 @@
   --fpsm-colour-foreground: #022e4a;
   --fpsm-colour-secondary: #eeeff4;
   --fpsm-colour-primary: #00e889;
+  --fpsm-colour-primary-text: #022e4a;
+
+  @media (prefers-color-scheme: dark) {
+    --fpsm-colour-foreground: #eeeff4;
+    --fpsm-colour-secondary: #022e4a;
+  }
 }

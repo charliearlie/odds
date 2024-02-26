@@ -9,15 +9,12 @@ export const Layout = (props) => (
   <MDXProvider>
     <CssLayout
       logo={
-        <>
+        <div className={styles.heading}>
           <img
             className={`${styles.logo}`}
-            src="https://www.adobe.com/content/dam/cc/icons/Adobe_Corporate_Horizontal_Red_HEX.svg"
+            src="https://cdn.prod.us.occloud.io/blue/img/icons/oc-logo.png"
           />
-          <h3 className={`${styles.heading}`} style={{ fontWeight: 700 }}>
-            React Aria
-          </h3>
-        </>
+        </div>
       }
       {...props}
     />

@@ -12,7 +12,7 @@ export default Layout;
 ## Usage
 
 ```tsx
-import { Button } from '@divriots/starter-react-aria/button';
+import { Button } from '@fpsm/odds/button';
 
 <Button onPress={() => alert('Button pressed!')}>Test</Button>;
 ```
@@ -22,9 +22,9 @@ import { Button } from '@divriots/starter-react-aria/button';
 <Playground
   scope={{ Button }}
   code={`
-<Button size="small" onClick={() => alert('small button pressed!')}>Small</Button>
-<Button size="medium" onClick={() => alert('medium button pressed!')}>Medium</Button>
-<Button size="large" onClick={() => alert('large button pressed!')}>Large</Button>
+<Button size="sm" onClick={() => alert('small button pressed!')}>Small</Button>
+<Button onClick={() => alert('medium button pressed!')}>Medium</Button>
+<Button size="lg" onClick={() => alert('large button pressed!')}>Large</Button>
 <br />
 
 <Button onPress={() => alert('small button pressed!')}>Primary</Button>

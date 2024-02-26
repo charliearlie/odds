@@ -25,7 +25,7 @@ const buttonVariants = cva({
       lg: styles.sizeLg,
       icon: styles.sizeIcon,
     },
-    isDisabled: {
+    disabled: {
       true: styles.disabled,
     },
   },
@@ -40,7 +40,7 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
     const Comp = asChild ? Slot : 'button';
     return (
       <Comp
-        className={clsx(buttonVariants({ variant, size, className }))}
+        className={clsx(buttonVariants({ variant, size, className, disabled }))}
         ref={ref}
         {...props}
       />

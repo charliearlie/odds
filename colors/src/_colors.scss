@@ -1,13 +1,62 @@
 :root {
-  --aria-color-white: #ffffff;
-  --aria-color-primary: #3082ce;
-  --aria-color-secondary: #f9f9f9;
-  --aria-color-gray-300: #cbd5e0;
-  --aria-color-focus-outline: #4299e14c;
-  --fpsm-colour-foreground: #022e4a;
   --fpsm-colour-secondary: #eeeff4;
   --fpsm-colour-primary: #00e889;
-  --fpsm-colour-primary-text: #022e4a;
+  --fpsm-colour-primary-text: #022c41;
+
+  --fpsm-colour-blue-110: #022c41;
+  --fpsm-colour-blue-100: #033954;
+  --fpsm-colour-blue-90: #15506f;
+  --fpsm-colour-blue-50: #cbdde7;
+  --fpsm-colour-blue-10: #e9f0f4;
+
+  --fpsm-colour-green-110: #0dcb8b;
+  --fpsm-colour-green-100: #0edd98;
+  --fpsm-colour-green-90: #0fefa5;
+  --fpsm-colour-green-50: #b5fae3;
+  --fpsm-colour-green-10: #e7fcf5;
+
+  --fpsm-colour-cyan-110: #21b7e9;
+  --fpsm-colour-cyan-100: #21a8d6;
+  --fpsm-colour-cyan-10: #e6f2fb;
+
+  --fpsm-colour-neutral-110: #9ab0bb;
+  --fpsm-colour-neutral-100: #d6e1e5;
+  --fpsm-colour-neutral-90: #e6ecee;
+  --fpsm-colour-neutral-50: #eef2f3;
+  --fpsm-colour-neutral-10: #f7f8f9;
+
+  --fpsm-colour-grey-110: #20242e;
+  --fpsm-colour-grey-100: #54585f;
+  --fpsm-colour-grey-90: #9d9da3;
+  --fpsm-colour-grey-50: #e5e5e5;
+  --fpsm-colour-grey-10: #f2f2f2;
+
+  --fpsm-odds-shortening-110: #76bfeb;
+  --fpsm-odds-shortening-100: #8cccf2;
+  --fpsm-odds-shortening-50: #c5e5f8;
+  --fpsm-odds-shortening-10: #f3fafe;
+
+  --fpsm-odds-drifting-110: #ff9aa8;
+  --fpsm-odds-drifting-100: #ffafba;
+  --fpsm-odds-drifting-50: #ffd7dc;
+  --fpsm-odds-drifting-10: #fff7f8;
+
+  --fpsm-boosts-110: #f0d000;
+  --fpsm-boosts-100: #fddb00;
+  --fpsm-boosts-50: #feed80;
+  --fpsm-boosts-10: #fffbe6;
+
+  --fpsm-success-100: #008758;
+  --fpsm-success-10: #e6f3ee;
+
+  --fpsm-warning-100: #e8aa00;
+  --fpsm-warning-10: #fff8e6;
+
+  --fpsm-warning-100: #ea1042;
+  --fpsm-warning-10: #fde7ec;
+
+  --fpsm-info-100: #0090e9;
+  --fpsm-info-10: #e7f6ff;
 
   @media (prefers-color-scheme: dark) {
     --fpsm-colour-foreground: #eeeff4;

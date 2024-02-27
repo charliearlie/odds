@@ -4,7 +4,7 @@
 }
 
 .heading {
-  background-color: var(--fpsm-colour-foreground);
+  background-color: var(--fpsm-colour-blue-110);
   margin: auto;
   flex: 1;
   padding: 0 1rem;

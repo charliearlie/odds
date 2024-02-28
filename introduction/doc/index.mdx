@@ -32,7 +32,7 @@ The Tokens are split in different components:
 - `transitions`: easing and speed
 - `z-index`: z-axe indices
 
-All tokens are declared in dedicated `_*.scss` files in their dedicated tokens' components. They declare CSS Custom Properties, prefixed with `--aria-*`. They're then all exposed by the `all/all.scss` component global stylesheet.
+All tokens are declared in dedicated `_*.scss` files in their dedicated tokens' components. They declare CSS Custom Properties, prefixed with `--fpsm-*`. They're then all exposed by the `all/all.scss` component global stylesheet.
 
 Your theme tokens are accessible by importing the theme stylesheet:
 
@@ -48,9 +48,9 @@ When styled with SCSS, components can use the [Sass `var` method](https://sass-l
 
 ```scss
 .button {
-  border-radius: var(--aria-border-radius-medium);
-  background: var(--aria-color-primary);
-  color: var(--aria-color-white);
+  border-radius: var(--fpsm-border-radius-medium);
+  background: var(--fpsm-color-primary);
+  color: var(--fpsm-color-white);
 }
 ```
 

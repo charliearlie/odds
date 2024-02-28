@@ -1,3 +1,7 @@
+body {
+  font-family: var(--fpsm-font-family-sans) !important;
+}
+
 .logo {
   width: 18rem;
   height: 4rem;

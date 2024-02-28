@@ -17,6 +17,7 @@ export const Layout = (props) => (
         </div>
       }
       {...props}
+      style="font-family: 'Public Sans', sans-serif;"
     />
   </MDXProvider>
 );

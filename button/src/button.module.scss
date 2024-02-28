@@ -15,11 +15,11 @@
   width: auto;
   line-height: 1.2;
   border-width: 0px;
-  border-radius: var(--aria-border-radius-medium);
-  font-weight: var(--aria-font-weight-semibold);
-  min-width: var(--aria-spacing-xx-large);
-  padding-inline-start: var(--aria-spacing-medium);
-  padding-inline-end: var(--aria-spacing-medium);
+  border-radius: var(--fpsm-border-radius-medium);
+  font-weight: var(--fpsm-font-weight-semibold);
+  min-width: var(--fpsm-spacing-xx-large);
+  padding-inline-start: var(--fpsm-spacing-medium);
+  padding-inline-end: var(--fpsm-spacing-medium);
   margin: 2px;
   background: none;
   cursor: pointer;
@@ -60,18 +60,18 @@
 }
 
 .sizeSm {
-  font-size: var(--aria-font-size-small);
-  height: var(--aria-spacing-x-large);
+  font-size: var(--fpsm-font-size-small);
+  height: var(--fpsm-spacing-x-large);
 }
 
 .sizeDefault {
-  font-size: var(--aria-font-size-medium);
-  height: var(--aria-spacing-xx-large);
+  font-size: var(--fpsm-font-size-medium);
+  height: var(--fpsm-spacing-xx-large);
 }
 
 .sizeLg {
-  font-size: var(--aria-font-size-large);
-  height: var(--aria-spacing-xxx-large);
+  font-size: var(--fpsm-font-size-large);
+  height: var(--fpsm-spacing-xxx-large);
 }
 
 .sizeIcon {

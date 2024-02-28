@@ -3,7 +3,7 @@ import { MDXProvider } from '@mdx-js/react';
 import { CssLayout } from '@divriots/dockit-react/mdx-layout-css';
 import styles from './layout.module.css';
 
-import '~/all/src/all.scss';
+import '~/styles';
 
 export const Layout = (props) => (
   <MDXProvider>

@@ -1,4 +1,4 @@
-import '~/all/src/all.scss';
+import '~/styles;
 
 export const parameters = {
   layout: 'centered',

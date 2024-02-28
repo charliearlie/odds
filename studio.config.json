@@ -23,14 +23,6 @@
      "switch",
      "select"
     ]
-   ],
-   [
-    "dockit",
-    [
-     "mdx-layout",
-     "story-layout",
-     "story-layout"
-    ]
    ]
   ]
  }

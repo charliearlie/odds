@@ -14,7 +14,7 @@ export default Layout;
 ```tsx
 import { Button } from '@fpsm/odds/button';
 
-<Button onPress={() => alert('Button pressed!')}>Test</Button>;
+<Button onClick={() => alert('Button pressed!')}>Test</Button>;
 ```
 
 ## Example
@@ -27,14 +27,14 @@ import { Button } from '@fpsm/odds/button';
 <Button size="lg" onClick={() => alert('large button pressed!')}>Large</Button>
 <br />
 
-<Button onPress={() => alert('small button pressed!')}>Primary</Button>
-<Button variant="secondary" onClick={() => alert('medium button pressed!')}>
+<Button onClick={() => alert('Primary button pressed!')}>Primary</Button>
+<Button variant="secondary" onClick={() => alert('Secondary button pressed!')}>
   Secondary
 </Button>
 <Button variant="outline" onClick={() => alert('outline button pressed!')}>
   Outline
 </Button>
-<Button disabled onClick={() => alert('large button pressed!')}>
+<Button disabled onClick={() => alert('I should never be seen')}>
   Disabled
 </Button>
 `} />

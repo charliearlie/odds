@@ -3,13 +3,13 @@ import { Button } from '../index';
 
 export const primary = () => (
   <>
-    <Button size="small" onPress={() => alert('Button pressed!')}>
+    <Button size="sm" onClick={() => alert('Button pressed!')}>
       Small
     </Button>
-    <Button size="medium" onPress={() => alert('Button pressed!')}>
+    <Button onClick={() => alert('Button pressed!')}>
       Medium
     </Button>
-    <Button size="large" onPress={() => alert('Button pressed!')}>
+    <Button size="lg" onClick={() => alert('Button pressed!')}>
       Large
     </Button>
   </>
@@ -19,18 +19,18 @@ export const secondary = () => (
   <>
     <Button
       variant="secondary"
-      size="small"
-      onPress={() => alert('Button pressed!')}
+      size="sm"
+      onClick={() => alert('Button pressed!')}
     >
       Small
     </Button>
-    <Button variant="secondary" onPress={() => alert('Button pressed!')}>
+    <Button variant="secondary" onClick={() => alert('Button pressed!')}>
       Medium
     </Button>
     <Button
       variant="secondary"
       size="large"
-      onPress={() => alert('Button pressed!')}
+      onClick={() => alert('Button pressed!')}
     >
       Large
     </Button>

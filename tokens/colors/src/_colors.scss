@@ -1,7 +1,6 @@
 :root {
   --fpsm-colour-secondary: #eeeff4;
   --fpsm-colour-primary: #00e889;
-  --fpsm-colour-primary-text: #022c41;
 
   --fpsm-colour-blue-110: #022c41;
   --fpsm-colour-blue-100: #033954;
@@ -57,6 +56,9 @@
 
   --fpsm-info-100: #0090e9;
   --fpsm-info-10: #e7f6ff;
+
+  --fpsm-colour-primary-text: var(--fpsm-colour-blue-110);
+  --fpsm-colour-foreground: var(--fpsm-colour-blue-110);
 
   @media (prefers-color-scheme: dark) {
     --fpsm-colour-foreground: #eeeff4;

@@ -1,21 +1,19 @@
 import React from 'react';
 import { Button } from '../index';
 
-export const primary = () => (
+export const primaryButton = () => (
   <>
     <Button size="sm" onClick={() => alert('Button pressed!')}>
       Small
     </Button>
-    <Button onClick={() => alert('Button pressed!')}>
-      Medium
-    </Button>
+    <Button onClick={() => alert('Button pressed!')}>Medium</Button>
     <Button size="lg" onClick={() => alert('Button pressed!')}>
       Large
     </Button>
   </>
 );
 
-export const secondary = () => (
+export const secondaryButton = () => (
   <>
     <Button
       variant="secondary"
@@ -29,7 +27,7 @@ export const secondary = () => (
     </Button>
     <Button
       variant="secondary"
-      size="large"
+      size="lg"
       onClick={() => alert('Button pressed!')}
     >
       Large
@@ -39,13 +37,30 @@ export const secondary = () => (
 
 export const disabled = () => (
   <>
-    <Button isDisabled size="small" onPress={() => alert('Button pressed!')}>
+    <Button
+      isDisabled
+      size="sm"
+      onClick={() =>
+        alert('Button is disabled so you should never see this alert')
+      }
+    >
       Small
     </Button>
-    <Button isDisabled size="medium" onPress={() => alert('Button pressed!')}>
+    <Button
+      isDisabled
+      onClick={() =>
+        alert('Button is disabled so you should never see this alert')
+      }
+    >
       Medium
     </Button>
-    <Button isDisabled size="large" onPress={() => alert('Button pressed!')}>
+    <Button
+      isDisabled
+      size="lg"
+      onClick={() =>
+        alert('Button is disabled so you should never see this alert')
+      }
+    >
       Large
     </Button>
   </>
